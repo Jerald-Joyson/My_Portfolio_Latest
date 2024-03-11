@@ -15,8 +15,8 @@ const Contact = () => {
             </div>
             <h1 className="h1 max-w-md mb-8">Let's Work Together.</h1>
             <p className="subtitle max-w-[400px]">
-              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Placeat,
-              nostrum.
+              🌟 Unlocking potential through collaboration. 🚀 Join forces with
+              us and let's create something extraordinary together!🙌🏻✨
             </p>
           </div>
           {/* illustration */}
@@ -29,7 +29,7 @@ const Contact = () => {
             {/* mail */}
             <div className="flex items-center gap-x-8">
               <MailIcon size={18} className="text-primary" />
-              <div>youremail@gmail.com</div>
+              <div>jeraldjoyson.inc@gmail.com</div>
             </div>
             {/* mail */}
             <div className="flex items-center gap-x-8">

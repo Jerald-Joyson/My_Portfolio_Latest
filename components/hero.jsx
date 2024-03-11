@@ -19,13 +19,24 @@ const Hero = () => {
         <div className="flex justify-between gap-x-8">
           {/* text */}
           <div className="flex max-w-[600px] flex-col justify-center mx-auto xl:mx-0 text-center xl:text-left">
-            <div className="text-sm uppercase font-semibold mb-4 text-primary tracking-[4px]">
+            {/* <div className="text-sm uppercase font-semibold mb-4 text-primary tracking-[4px]">
               Web Developer
-            </div>
-            <h1 className="h1 mb-4">Hello, my name is Jerald Joyson</h1>
+            </div> */}
+            <span className="text-md font-semibold mb-4 text-primary tracking-[4px]">
+              Hii, my name is
+            </span>
+            <h1 className="h1 mb-4">Jerald Joyson</h1>
+            <h2 className="h2 mb-2">I build things for the web.</h2>
             <p className="subtitle max-w-[490px] mx-auto xl:mx-0">
-              Brief description with insights into myself, my vocational
-              journey, and what I engage in professionally.{" "}
+              Enthusiastic developer skilled in crafting dynamic web pages and
+              mobile apps with Flutter and Android Studio. Currently diving deep
+              into React.js to elevate user experiences. Committed to continuous
+              growth in the ever-evolving tech landscape.
+              <br />
+              <p className="font-semibold">
+                'Learning never exhausts the mind.'
+              </p>
+              <p className="indent-40">Leonardo da Vinci</p>
             </p>
             {/* buttons */}
             <div className="flex flex-col gap-y-3 md:flex-row gap-x-3 mx-auto xl:mx-0 mb-12">
@@ -35,7 +46,7 @@ const Hero = () => {
                 </Button>
               </Link>
               <Button variant="secondary" className="gap-x-2">
-                Download CV <Send size={18} />
+                Download CV <Download size={18} />
               </Button>
             </div>
             {/* socials */}
@@ -50,23 +61,23 @@ const Hero = () => {
             <Badge
               containerStyles="absolute top-[24%] -left-[5rem]"
               icon={<RiBriefcase4Fill />}
-              endCountNum={3}
+              // endCountNum={0}
               badgeText="Year Of Experience"
             />
             {/* badge 2 */}
             <Badge
               containerStyles="absolute top-[80%] -left-[1rem]"
               icon={<RiTodoFill />}
-              endCountNum={6}
-              endCountText="k"
+              // endCountNum={0}
+              // endCountText="k"
               badgeText="Finished Projects"
             />
             {/* badge 3 */}
             <Badge
               containerStyles="absolute top-[55%] -right-8"
               icon={<RiTeamFill />}
-              endCountNum={9}
-              endCountText="k"
+              // endCountNum={0}
+              // endCountText="k"
               badgeText="Happy Clients"
             />
             <div className="bg-hero_shape2_light dark:bg-hero_shape2_dark w-[500px] h-[500px] bg-no-repeat absolute -top-1 -right-2"></div>
