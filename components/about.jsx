@@ -127,16 +127,16 @@ const About = () => {
           <div className="flex-1">
             <Tabs defaultValue="personal">
               <TabsList className="w-full grid xl:grid-cols-3 xl:max-w-[520px] xl:border dark:border-none">
-                <TabsTrigger className="w-[162px] xl:w-auto" volue="personal">
+                <TabsTrigger className="w-[162px] xl:w-auto" value="personal">
                   Personal Info
                 </TabsTrigger>
                 <TabsTrigger
                   className="w-[162px] xl:w-auto"
-                  volue="qualifications"
+                  value="qualifications"
                 >
                   Qualifications
                 </TabsTrigger>
-                <TabsTrigger className="w-[162px] xl:w-auto" volue="skills">
+                <TabsTrigger className="w-[162px] xl:w-auto" value="skills">
                   Skills
                 </TabsTrigger>
               </TabsList>
@@ -253,7 +253,7 @@ const About = () => {
                   </div>
                 </TabsContent>
                 {/* skills */}
-                <TabsContent volue="skills">
+                <TabsContent value="skills">
                   <div className="text-center xl:text-left ">
                     <h3 className="h3 mb-8">Tools I Use</h3>
                     {/* skills */}
