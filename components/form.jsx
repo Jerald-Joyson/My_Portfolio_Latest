@@ -22,7 +22,7 @@ const Form = () => {
         <Textarea placeholder="Type your message..!" />
         <MessageSquare className=" absolute top-4 right-6" size={20} />
       </div>
-      <Button className="flex itens-center gap-x-1 max-w- [166px]">
+      <Button className="flex itens-center gap-x-1 max-w-[166px]">
         Let's Talk
         <ArrowRightIcon size={20} />
       </Button>
