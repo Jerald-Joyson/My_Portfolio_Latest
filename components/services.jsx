@@ -35,7 +35,7 @@ const Services = () => {
           My Services
         </h2>
         {/* grid items */}
-        <div className="grid xl : grid-cols-3 justify-center gap-y-12 xl:gap-y-24 xl:gap-x-8">
+        <div className="grid xl:grid-cols-3 justify-center gap-y-12 xl:gap-y-24 xl:gap-x-8">
           {servicesData.map((item, index) => {
             return (
               <Card
@@ -43,7 +43,7 @@ const Services = () => {
                 key={index}
               >
                 <CardHeader className="text-primary absolute -top-[60px]">
-                  <div className="w-[140px] h-[80px] flex justify-center items-center bg-white dark:bg-background">
+                  <div className="w-[140px] h-[80px] bg-white dark:bg-background flex justify-center items-center">
                     {item.icon}
                   </div>
                 </CardHeader>
