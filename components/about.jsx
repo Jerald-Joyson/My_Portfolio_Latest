@@ -61,6 +61,21 @@ const qualificationData = [
         role: " ",
         years: " ",
       },
+      {
+        company: " ",
+        role: " ",
+        years: " ",
+      },
+      {
+        company: " ",
+        role: " ",
+        years: " ",
+      },
+      {
+        company: " ",
+        role: " ",
+        years: " ",
+      },
     ],
   },
 ];
@@ -182,9 +197,9 @@ const About = () => {
                       My Awesome Journey
                     </h3>
                     {/* experience and education */}
-                    <div className="grid md:grid-col-2 gap-y-8">
+                    <div className="grid md:grid-cols-2 gap-y-8">
                       {/* experiences */}
-                      <div className="flex flex-col gapy-y-6">
+                      <div className="flex flex-col gap-y-6">
                         <div className="flex gap-x-4 items-center text-[22px] text-primary">
                           <Briefcase />
                           <h4 className="capitalize font-medium">
@@ -198,17 +213,19 @@ const About = () => {
                               const { company, role, years } = item;
                               return (
                                 <div className="flex gap-x-8 group" key={index}>
-                                  <div className="h-[48px] w-[1px] bg-border relative ml-2 ">
+                                  <div className="h-[84px] w-[1px] bg-border relative ml-2 ">
                                     <div className="w-[11px] h-[11px] rounded-full bg-primary absolute -left-[5px] group-hover:translate-y-[84px] transition-all duration-500"></div>
                                   </div>
-                                  <div className="font-semibold text-xl leading-none mb-2">
-                                    {company}
-                                  </div>
-                                  <div className="text-lg leading-none text-muted-foreground mb-4">
-                                    {role}
-                                  </div>
-                                  <div className="font-medium text-base">
-                                    {years}
+                                  <div>
+                                    <div className="font-semibold text-xl leading-none mb-2">
+                                      {company}
+                                    </div>
+                                    <div className="text-lg leading-none text-muted-foreground mb-4">
+                                      {role}
+                                    </div>
+                                    <div className="font-medium text-base">
+                                      {years}
+                                    </div>
                                   </div>
                                 </div>
                               );
@@ -217,7 +234,7 @@ const About = () => {
                         </div>
                       </div>
                       {/* education  */}
-                      <div className="flex flex-col gapy-y-6">
+                      <div className="flex flex-col gap-y-6">
                         <div className="flex gap-x-4 items-center text-[22px] text-primary">
                           <GraduationCap size={28} />
                           <h4 className="capitalize font-medium">
@@ -231,17 +248,19 @@ const About = () => {
                               const { university, qualification, years } = item;
                               return (
                                 <div className="flex gap-x-8 group" key={index}>
-                                  <div className="h-[48px] w-[1px] bg-border relative ml-2 ">
+                                  <div className="h-[84px] w-[1px] bg-border relative ml-2 ">
                                     <div className="w-[11px] h-[11px] rounded-full bg-primary absolute -left-[5px] group-hover:translate-y-[84px] transition-all duration-500"></div>
                                   </div>
-                                  <div className="font-semibold text-xl leading-none mb-2">
-                                    {university}
-                                  </div>
-                                  <div className="text-lg leading-none text-muted-foreground mb-4">
-                                    {qualification}
-                                  </div>
-                                  <div className="font-medium text-base">
-                                    {years}
+                                  <div>
+                                    <div className="font-semibold text-xl leading-none mb-2">
+                                      {university}
+                                    </div>
+                                    <div className="text-lg leading-none text-muted-foreground mb-4">
+                                      {qualification}
+                                    </div>
+                                    <div className="font-medium text-base">
+                                      {years}
+                                    </div>
                                   </div>
                                 </div>
                               );

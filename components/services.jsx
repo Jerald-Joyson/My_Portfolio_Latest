@@ -11,19 +11,19 @@ const servicesData = [
     icon: <GanttChartSquare size={72} strokeWidth={0.8} />,
     title: "Web Design",
     description:
-      "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Hic quasi libero quidem sit deserunt fuga.",
+      "Crafting captivating digital experiences tailored to your brand's identity. Elevate your online presence with intuitive designs that engage and inspire your audience.",
   },
   {
     icon: <Blocks size={72} strokeWidth={0.8} />,
     title: "Web Development",
     description:
-      "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Hic quasi libero quidem sit deserunt fuga.",
+      "Transforming your ideas into seamless digital solutions. From dynamic websites to robust web applications, we specialize in coding brilliance to bring your vision to life.",
   },
   {
     icon: <Gem size={72} strokeWidth={0.8} />,
     title: "App Development",
     description:
-      "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Hic quasi libero quidem sit deserunt fuga.",
+      "Building innovative mobile experiences that resonate with your users. Our team of skilled developers creates cutting-edge apps that deliver functionality with flair and finesse.",
   },
 ];
 
