@@ -3,15 +3,15 @@ import Image from "next/image";
 import React from "react";
 import { useTheme } from "next-themes";
 
-const Logo = () => {
+const Logo = ({ height, width }) => {
   const { theme } = useTheme();
 
   return (
     <Link href="/">
       <Image
-        src={theme === "dark" ? "/Group4.png" : "/Group5.png"}
-        width={54}
-        height={54}
+        src={theme === "dark" ? "/logoWhite.png" : "/logoDark.png"}
+        width={height}
+        height={width}
         priority
         alt="logo"
       />
