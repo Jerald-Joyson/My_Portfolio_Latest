@@ -12,21 +12,21 @@ import Badge from "./badge";
 import Socials from "./socials";
 import Link from "next/link";
 
+const name = "Jerald Joyson".toUpperCase();
+
 const Hero = () => {
   return (
-    <section className="py-12 xl:py-24 h-[84vh] xl:pt-28 bg-hero bg-no-repeat bg-bottom dark:bg-none bg-cover">
+    <section className="py-12 xl:py-24 h-[84vh] xl:pt-28 bg-hero bg-no-repeat bg-bottom dark:bg-hero_dark bg-cover">
       <div className="container mx-auto">
         <div className="flex justify-between gap-x-8">
           {/* text */}
           <div className="flex max-w-[600px] flex-col justify-center mx-auto xl:mx-0 text-center xl:text-left">
-            {/* <div className="text-sm uppercase font-semibold mb-4 text-primary tracking-[4px]">
-              Web Developer
-            </div> */}
             <span className="text-md font-semibold mb-4 text-primary tracking-[4px]">
               Hii, my name is
             </span>
-            <h1 className="h1 mb-4">Jerald Joyson</h1>
-            <h2 className="h2 mb-2">I build things for the web.</h2>
+            <h1 className="h1 mb-2 text-lg">{name}</h1>
+            <h2 className="h2 mb-2">I build websites and mobile apps.</h2>
+
             <p className="subtitle max-w-[490px] mx-auto xl:mx-0">
               Enthusiastic developer skilled in crafting dynamic web pages and
               mobile apps with Flutter and Android Studio. Currently diving deep
