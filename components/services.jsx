@@ -56,7 +56,6 @@ const Services = () => {
               </Card>
             );
           })}
-          ;
         </div>
       </div>
     </section>
