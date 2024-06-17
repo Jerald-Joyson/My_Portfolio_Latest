@@ -4,6 +4,7 @@ import Link from "next/link";
 import { Button } from "./ui/button";
 
 import { Swiper, SwiperSlide } from "swiper/react";
+import projectData from "../lib/projectCardDetails";
 
 // import swiper styles
 import "swiper/css";
@@ -14,63 +15,6 @@ import { Pagination } from "swiper/modules";
 
 //components
 import ProjectCard from "./projectCard";
-
-const projectData = [
-  {
-    image: "/work/3.png",
-    category: "react js",
-    name: "Nexa Website",
-    description:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque, quis.",
-    link: "/",
-    github: "/",
-  },
-  {
-    image: "/work/4.png",
-    category: "react js",
-    name: "Nexa Website",
-    description:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque, quis.",
-    link: "/",
-    github: "/",
-  },
-  {
-    image: "/work/2.png",
-    category: "react js",
-    name: "Nexa Website",
-    description:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque, quis.",
-    link: "/",
-    github: "/",
-  },
-  {
-    image: "/work/4.png",
-    category: "react js",
-    name: "Nexa Website",
-    description:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque, quis.",
-    link: "/",
-    github: "/",
-  },
-  {
-    image: "/work/2.png",
-    category: "react js",
-    name: "Nexa Website",
-    description:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque, quis.",
-    link: "/",
-    github: "/",
-  },
-  {
-    image: "/work/3.png",
-    category: "react js",
-    name: "Nexa Website",
-    description:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque, quis.",
-    link: "/",
-    github: "/",
-  },
-];
 
 const Work = () => {
   return (

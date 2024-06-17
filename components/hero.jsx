@@ -1,4 +1,5 @@
 import { Button } from "./ui/button";
+// import { Box } from "@material-ui/core";
 import { Download, Send } from "lucide-react";
 import {
   RiBriefcase4Fill,
@@ -20,7 +21,7 @@ const Hero = () => {
       <div className="container mx-auto">
         <div className="flex justify-between gap-x-8">
           {/* text */}
-          <div className="flex max-w-[600px] flex-col justify-center mx-auto xl:mx-0 text-center xl:text-left">
+          <div className="flex max-w-[600px] flex-col justify-center mx-auto xl:mx-0 text-center xl:text-left mb-12 xl:mb-0">
             <span className="text-md font-semibold mb-4 text-primary tracking-[4px]">
               Hii, my name is
             </span>
@@ -61,6 +62,7 @@ const Hero = () => {
               containerStyles="flex gap-x-6 mx-auto xl:mx-0"
               iconStyles="text-foreground text-[22px] hover:text-primary transition-all"
             />
+            {/* <Box bgcolor="red" width={100} height={100}></Box> */}
           </div>
           {/* image */}
           <div className="hidden xl:flex relative">
@@ -95,7 +97,7 @@ const Hero = () => {
           </div>
         </div>
         {/* icons */}
-        <div className="hidden md:flex absolute left-2/4 bottom-44 xl:bottom-12 animate-bounce">
+        <div className="hidden xl:flex absolute left-2/4 bottom-44 xl:bottom-12 animate-bounce">
           <RiArrowDownSLine className="text-3xl text-primary" />
         </div>
       </div>
