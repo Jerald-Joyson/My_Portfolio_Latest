@@ -24,9 +24,9 @@ const Header = () => {
     <header
       className={`${
         header
-          ? "py-4 bg-white shadow-lg dark:bg-accent"
-          : "py-6 dark:bg-transparent"
-      } sticky top-0 z-30 transition-all ${pathname === "/" && "bg-white"}`}
+          ? "py-4 bg-[#ffffff] shadow-lg dark:bg-[#3b4354]"
+          : "py-6 dark:bg-[#302a22]"
+      } sticky top-0 z-30 transition-all ${pathname === "/" && "bg-[#f9e5c9]"}`}
     >
       <div className="container mx-auto">
         <div className="flex justify-between items-center">

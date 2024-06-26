@@ -199,16 +199,15 @@ const About = () => {
                       My Awesome Journey
                     </h3>
                     {/* experience and education */}
-                    <div className="grid md:grid-cols-2 gap-y-8">
+                    <div className="flex">
                       {/* experiences */}
-                      <div className="flex flex-col gap-y-6">
+                      {/* <div className="flex flex-col gap-y-6">
                         <div className="flex gap-x-4 items-center text-[22px] text-primary">
                           <Briefcase />
                           <h4 className="capitalize font-medium">
                             {getData(qualificationData, "experience").title}
                           </h4>
                         </div>
-                        {/* lists */}
                         <div className="flex flex-col gap-y-8">
                           {getData(qualificationData, "experience").data.map(
                             (item, index) => {
@@ -234,7 +233,7 @@ const About = () => {
                             }
                           )}
                         </div>
-                      </div>
+                      </div> */}
                       {/* education  */}
                       <div className="flex flex-col gap-y-6">
                         <div className="flex gap-x-4 items-center text-[22px] text-primary">
@@ -254,14 +253,17 @@ const About = () => {
                                     <div className="w-[11px] h-[11px] rounded-full bg-primary absolute -left-[5px] group-hover:translate-y-[84px] transition-all duration-500"></div>
                                   </div>
                                   <div>
-                                    <div className="font-semibold text-xl leading-none mb-2">
-                                      {university}
+                                    <div className="grid grid-cols-2 gap-x-4">
+                                      <div className="font-semibold text-xl leading-none mb-2">
+                                        {university}
+                                      </div>
+                                      <div className="font-medium text-base min-w-24">
+                                        ({years})
+                                      </div>
                                     </div>
+
                                     <div className="text-lg leading-none text-muted-foreground mb-4">
                                       {qualification}
-                                    </div>
-                                    <div className="font-medium text-base">
-                                      {years}
                                     </div>
                                   </div>
                                 </div>
