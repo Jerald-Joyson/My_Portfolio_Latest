@@ -17,7 +17,7 @@ const name = "Jerald Joyson".toUpperCase();
 
 const Hero = () => {
   return (
-    <section className="py-12 xl:py-24 h-[150vh] xl:h-[84vh] xl:pt-28 bg-hero bg-no-repeat bg-bottom dark:bg-hero_dark bg-cover">
+    <section className="py-12 xl:py-24 h-[165vh] xl:h-[84vh] xl:pt-28 bg-hero bg-no-repeat bg-bottom dark:bg-hero_dark bg-cover">
       <div className="container mx-auto">
         <div className="xl:hidden flex relative justify-center items-center pb-10 min-w-[320px] min-h-[50vh] md:min-h-[57vh] md:min-w-[390px]">
           {/* badge 1 */}

@@ -48,7 +48,7 @@ const qualificationData = [
       },
       {
         university: "Govt. Engineering College Sreekrishnapuram,Palakkad",
-        qualification: "Bachelor of Technology",
+        qualification: "B-TECH",
         years: "2022-2025",
       },
     ],
