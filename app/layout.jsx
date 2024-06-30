@@ -3,6 +3,7 @@ import "./globals.css";
 //compoments
 import Header from "@/components/header";
 import Footer from "@/components/footer";
+import { Toaster } from "react-hot-toast";
 //themeprovider
 import { ThemeProvider } from "@/components/themeProvider";
 
@@ -21,6 +22,7 @@ export default function RootLayout({ children }) {
           <Header />
           {children}
           <Footer />
+          <Toaster position="top-right" reverseOrder={false} />
         </ThemeProvider>
       </body>
     </html>

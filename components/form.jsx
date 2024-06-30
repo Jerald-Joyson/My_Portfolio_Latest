@@ -3,48 +3,93 @@ import { Button } from "./ui/button";
 import { Input } from "./ui/input";
 import { Textarea } from "./ui/textarea";
 import { User, MailIcon, ArrowRightIcon, MessageSquare } from "lucide-react";
-import React, { useRef } from "react";
+import React, { useState } from "react";
 import emailjs from "@emailjs/browser";
+import toast from "react-hot-toast";
 
 const Form = () => {
-  const form = useRef();
+  const [name, setName] = useState("");
+  const [email, setEmail] = useState("");
+  const [message, setMessage] = useState("");
 
   const sendEmail = (e) => {
     e.preventDefault();
 
-    emailjs
-      .sendForm("YOUR_SERVICE_ID", "YOUR_TEMPLATE_ID", form.current, {
-        publicKey: "YOUR_PUBLIC_KEY",
-      })
-      .then(
-        () => {
-          console.log("SUCCESS!");
-          e.target.reset();
-        },
-        (error) => {
-          console.log("FAILED...", error.text);
-        }
-      );
+    const serviceId = "service" + "_2he9cxm";
+    const templateId = "template" + "_pk7s8ak";
+    const publicKey = "Zew9Cp6" + "0gbBzkcXy-";
+
+    // Validate fields are not empty
+    if (!name || !email || !message) {
+      toast.error("Please fill in all fields");
+      return;
+    }
+
+    // Validate email format
+    const re = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+    if (!re.test(email)) {
+      toast.error("Please enter a valid email address");
+      return;
+    }
+
+    // Prepare email parameters
+    const templateParams = {
+      from_name: name,
+      from_email: email,
+      to_name: "Jerald Joyson",
+      message: message,
+    };
+
+    // Send email using EmailJS
+    emailjs.send(serviceId, templateId, templateParams, publicKey).then(
+      (response) => {
+        console.log("SUCCESS!", response.status, response.text);
+        toast.success("Email sent successfully");
+        // Clear form fields
+        setName("");
+        setEmail("");
+        setMessage("");
+      },
+      (error) => {
+        console.log("FAILED...", error);
+        toast.error("Failed to send email");
+      }
+    );
   };
 
   return (
-    <form ref={form} onSubmit={sendEmail} className="flex flex-col gap-y-4 ">
-      {/* inputs */}
+    <form onSubmit={sendEmail} className="flex flex-col gap-y-4 ">
+      {/* Name input */}
       <div className="relative flex items-center">
-        <Input type="text" name="user_name" placeholder="Name" />
+        <Input
+          type="text"
+          value={name}
+          onChange={(e) => setName(e.target.value)}
+          placeholder="Name"
+        />
         <User className="absolute right-6" size={20} />
       </div>
-      {/* inputs */}
+      {/* Email input */}
       <div className="relative flex items-center">
-        <Input type="email" name="user_email" id="email" placeholder="Email" />
+        <Input
+          type="email"
+          value={email}
+          onChange={(e) => setEmail(e.target.value)}
+          placeholder="Email"
+        />
         <MailIcon className="absolute right-6" size={20} />
       </div>
-      {/* text area */}
+      {/* Message text area */}
       <div className="relative flex items-center">
-        <Textarea name="message" placeholder="Type your message..!" />
+        <Textarea
+          value={message}
+          onChange={(e) => setMessage(e.target.value)}
+          placeholder="Type your message..!"
+        />
         <MessageSquare className=" absolute top-4 right-6" size={20} />
       </div>
-      <Button type="submit" className="flex itens-center gap-x-1 max-w-[166px]">
+      {/* Submit button */}
+      <Button type="submit" className="flex items-center gap-x-1 max-w-[166px]">
         Let's Talk
         <ArrowRightIcon size={20} />
       </Button>
