@@ -17,7 +17,7 @@ const name = "Jerald Joyson".toUpperCase();
 
 const Hero = () => {
   return (
-    <section className="py-12 xl:py-24 h-[165vh] xl:h-[84vh] xl:pt-28 bg-hero bg-no-repeat bg-bottom dark:bg-hero_dark bg-cover">
+    <section className="py-12 xl:py-24 h-[210vh] sm:h-[165vh] md:h-[185vh]  xl:h-[84vh]  xl:pt-28 bg-hero bg-no-repeat bg-bottom dark:bg-hero_dark bg-cover">
       <div className="container mx-auto relative">
         <div className="absolute top-32 md:top-52 left-1/2 transform -translate-x-1/2 -translate-y-1/2">
           <div className="xl:hidden flex relative justify-center items-center pb-10 min-w-[320px] min-h-[50vh] md:min-h-[57vh] md:min-w-[390px]">
@@ -64,7 +64,7 @@ const Hero = () => {
               <p className="indent-40">Leonardo da Vinci</p>
             </p>
             {/* buttons */}
-            <div className="flex flex-col gap-y-3 md:flex-row gap-x-3 mx-auto xl:mx-0 mb-12">
+            <div className="flex flex-col gap-y-3 md:flex-row gap-x-3 mx-auto xl:mx-0 mb-5 sm:mb-12 md:mb-12 ">
               <Link href="/contact">
                 <Button className="gap-x-2">
                   Contact me <Send size={18} />
@@ -83,7 +83,7 @@ const Hero = () => {
             </div>
             {/* socials */}
             <Socials
-              containerStyles="flex gap-x-6 mx-auto xl:mx-0"
+              containerStyles="flex gap-x-6 mx-auto xl:mx-0 "
               iconStyles="text-foreground text-[22px] hover:text-primary transition-all"
             />
           </div>
