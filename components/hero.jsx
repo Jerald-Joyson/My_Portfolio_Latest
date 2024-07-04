@@ -17,18 +17,18 @@ const name = "Jerald Joyson".toUpperCase();
 
 const Hero = () => {
   return (
-    <section className="py-12 xl:py-24 h-[210vh] sm:h-[165vh] md:h-[185vh]  xl:h-[84vh]  xl:pt-28 bg-hero bg-no-repeat bg-bottom dark:bg-hero_dark bg-cover">
+    <section className="py-12 xl:py-24 xl:pt-28 bg-hero bg-no-repeat bg-bottom dark:bg-hero_dark bg-cover">
       <div className="container mx-auto relative">
-        <div className="absolute top-32 md:top-52 left-1/2 transform -translate-x-1/2 -translate-y-1/2">
+        <div className="flex items-center justify-center">
           <div className="xl:hidden flex relative justify-center items-center pb-10 min-w-[320px] min-h-[50vh] md:min-h-[57vh] md:min-w-[390px]">
             {/* badge 1 */}
             <Badge
-              containerStyles="absolute top-[14%] -left-[0rem] w-[60px] h-[60px]"
+              containerStyles="absolute top-[14%] -left-[0.5rem] w-[60px] h-[60px]"
               icon={<RiBriefcase4Fill />}
             />
             {/* badge 2 */}
             <Badge
-              containerStyles="absolute top-[70%] -left-[1rem] w-[60px] h-[60px]"
+              containerStyles="absolute top-[70%] -left-[0rem] w-[60px] h-[60px]"
               icon={<RiTodoFill />}
             />
             {/* badge 3 */}
@@ -36,14 +36,13 @@ const Hero = () => {
               containerStyles="absolute top-[55%] -right-1 w-[60px] h-[60px] "
               icon={<RiTeamFill />}
             />
-            <div className="bg-hero_shape2_light dark:bg-hero_shape2_dark w-[280px] h-[300px] md:w-[380px] md:h-[400px] bg-center bg-cover bg-no-repeat absolute top-3 right-50% "></div>
             <DevImg
               containerStyles="bg-hero_shape w-[311px] h-[282px] md:w-[510px] md:h-[462px] bg-no-repeat bg-center bg-cover relative"
               imgSrc="/hero/developer.png"
             />
           </div>
         </div>
-        <div className="flex justify-between gap-x-8 pt-72 md:pt-[430px] lg:pt-0">
+        <div className="flex justify-between gap-x-8">
           {/* text */}
           <div className="flex max-w-[600px] flex-col justify-center mx-auto xl:mx-0 text-center xl:text-left mb-12 xl:mb-0">
             <span className="h4 font-semibold mb-4 text-primary tracking-[4px]">
@@ -64,7 +63,7 @@ const Hero = () => {
               <p className="indent-40">Leonardo da Vinci</p>
             </p>
             {/* buttons */}
-            <div className="flex flex-col gap-y-3 md:flex-row gap-x-3 mx-auto xl:mx-0 mb-5 sm:mb-12 md:mb-12 ">
+            <div className="flex flex-col gap-y-3 md:flex-row gap-x-3 mx-auto xl:mx-0 mb-12 ">
               <Link href="/contact">
                 <Button className="gap-x-2">
                   Contact me <Send size={18} />

@@ -126,6 +126,12 @@ const About = () => {
   };
   return (
     <section className="xl:h-[860px] py-12 xl:py-24">
+      <div className="flex mb-5 xl:hidden justify-center items-center relative">
+        <DevImg
+          containerStyles="bg-about_shape_light dark:bg-about_shape_dark w-[270px] h-[270px] md:w-[505px] md:h-[505px] bg-no-repeat bg-center bg-cover relative"
+          imgSrc="/about/developer.png"
+        />
+      </div>
       <div className="container mx-auto">
         <h2 className="section-title mb-4 xl:mb-16 text-center mx-auto">
           About Me
